@@ -1,6 +1,6 @@
 import {IWeatherData} from '../../store/weather/model';
 
-export const getHoursAndMinutes = (weatherData?: IWeatherData) => {
+export const getHours = (weatherData?: IWeatherData) => {
   const newValues: string[] = [];
   weatherData?.hour?.map(hour => {
     const date = new Date(hour);

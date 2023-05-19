@@ -4,13 +4,13 @@ import {LineChart} from 'react-native-chart-kit';
 import {IWeatherData} from '../../store/weather/model';
 import {Container} from './styles';
 import theme from '../../providers/themeProvider/theme';
-import {getHoursAndMinutes} from './utils';
+import {getHours} from './utils';
 
 const {width, height} = Dimensions.get('screen');
 
 const Chart = ({weatherData}: {weatherData: IWeatherData}) => {
   const chartData = {
-    labels: getHoursAndMinutes(weatherData),
+    labels: getHours(weatherData),
     datasets: [
       {
         data: weatherData.temperature,
