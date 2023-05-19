@@ -6,7 +6,7 @@ import {Container} from './styles';
 import theme from '../../providers/themeProvider/theme';
 import {getHoursAndMinutes} from './utils';
 
-const {width} = Dimensions.get('screen');
+const {width, height} = Dimensions.get('screen');
 
 const Chart = ({weatherData}: {weatherData: IWeatherData}) => {
   const chartData = {
@@ -23,7 +23,7 @@ const Chart = ({weatherData}: {weatherData: IWeatherData}) => {
       <LineChart
         data={chartData}
         width={width}
-        height={520}
+        height={height * 0.6}
         yAxisSuffix="°"
         xLabelsOffset={10}
         formatXLabel={(value: string) =>
