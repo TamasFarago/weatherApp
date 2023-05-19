@@ -7,7 +7,7 @@ const {width} = Dimensions.get('screen');
 export const Container = styled.View`
   flex: 1;
   width: ${width}px;
-  background-color: ${theme.colors.Secondary};
+  background-color: ${theme.colors.Primary};
 `;
 
 export const CityName = styled.Text`

@@ -30,12 +30,12 @@ const Chart = ({weatherData}: {weatherData: IWeatherData}) => {
           parseInt(value) % 6 == 0 ? value : ''
         }
         chartConfig={{
-          backgroundColor: theme.colors.Secondary,
+          backgroundColor: theme.colors.Primary,
           propsForBackgroundLines: {
             stroke: 'rgba(255, 255, 255, 0)',
           },
-          backgroundGradientFrom: theme.colors.Secondary,
-          backgroundGradientTo: theme.colors.Secondary,
+          backgroundGradientFrom: theme.colors.Primary,
+          backgroundGradientTo: theme.colors.Primary,
           decimalPlaces: 2,
           color: () => `rgba(255, 255, 255, 0.5)`,
           labelColor: () => 'rgba(255, 255, 255, 1)',
