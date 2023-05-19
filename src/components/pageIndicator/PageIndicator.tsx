@@ -60,6 +60,7 @@ const PageIndicator = ({
         ref={flatListRef}
         scrollEnabled={false}
         data={pages}
+        style={{paddingLeft: 4}}
         horizontal
         onViewableItemsChanged={onViewableItemsChanged.current}
         contentContainerStyle={{
