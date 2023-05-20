@@ -15,16 +15,18 @@ export const weatherSlice = createSlice({
   initialState,
   reducers: {
     updateWeatherData: (state, action: PayloadAction<IWeatherData>) => {
-      const foundInStore = state.weatherData.some(
+      const isCityInStore = state.weatherData.some(
         data => data.city === action.payload.city,
       );
-      if (foundInStore) {
+
+      if (isCityInStore) {
         const updatedData = state.weatherData.map(item => {
           if (item.city === action.payload.city) {
             return {...item, ...action.payload};
           }
           return item;
         });
+
         state.weatherData = updatedData;
       } else {
         state.weatherData = [...state.weatherData, action.payload];
