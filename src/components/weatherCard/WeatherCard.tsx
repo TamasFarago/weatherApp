@@ -5,7 +5,7 @@ import Chart from '../chart/Chart';
 import {ActivityIndicator} from 'react-native';
 import {useAppSelector} from '../../store/store';
 import {selectWeatherForCity} from '../../store/weather';
-import {NetworkResourceState} from '../../utilts/networkResourceState';
+import {NetworkResourceState} from '../../utils/networkResourceState';
 
 const WeatherCard = ({item}: {item: ICity}) => {
   const {fetchForecastResourceState} = useAppSelector(state => state.weather);

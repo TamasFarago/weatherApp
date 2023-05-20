@@ -8,7 +8,7 @@ import {useAppDispatch, useAppSelector} from '../../store/store';
 import {fetchForecast} from '../../store/weather/thunk';
 import PageIndicator from '../../components/pageIndicator';
 import {selectWeatherForCity} from '../../store/weather';
-import {getNextDayDate} from '../../utilts/getNextDayDate';
+import {getNextDayDate} from '../../utils/getNextDayDate';
 
 const {width} = Dimensions.get('screen');
 

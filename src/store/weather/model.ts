@@ -1,4 +1,4 @@
-import {NetworkResourceState} from '../../utilts/networkResourceState';
+import {NetworkResourceState} from '../../utils/networkResourceState';
 
 export interface ICity {
   name: string;

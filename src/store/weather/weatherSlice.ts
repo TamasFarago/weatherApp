@@ -1,9 +1,9 @@
 import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import {NetworkResourceState} from '../../utilts/networkResourceState';
+import {NetworkResourceState} from '../../utils/networkResourceState';
 import {RootState} from '../store';
 import {IWeatherData, WeatherSliceState} from './model';
 import {fetchForecast} from './thunk';
-import {addResourceStateCases} from '../../utilts/networkResourceState';
+import {addResourceStateCases} from '../../utils/networkResourceState';
 
 export const initialState: WeatherSliceState = {
   weatherData: [],
