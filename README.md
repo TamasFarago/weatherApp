@@ -21,4 +21,4 @@ Start the dev server
 npm run start
 ```
 
-Demo link: https://www.veed.io/view/d184e140-ace0-4a5c-91f1-8ae99c88b565?sharingWidget=true&panel=share
+Demo link: https://drive.google.com/file/d/1FueYHDC5IIdV7hPkFU6al0EP_Zb879TP/view?usp=sharing
